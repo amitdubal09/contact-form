@@ -36,7 +36,8 @@ body{
     border: none;
 }
 
-.input{
+input,
+textarea{
     padding: 10px;
     margin: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -47,15 +48,21 @@ body{
     border-radius: 10px;
     font-size: 15px;
 }
-input:focus{
+input,
+textarea:focus{
     background-color: transparent !important;
 }
-input{
+input,
+textarea{
     background-color: transparent !important;
 }
 
-.input::placeholder{
+input::placeholder{
     color: rgba(255, 255, 255, 0.856);
+}
+
+textarea::placeholder{
+    color: rgba(255,255,2555,0.856);
 }
 
 .right-container img{
@@ -91,7 +98,8 @@ button{
         width: 300px;
     }
 
-    .input{
+    input,
+    textarea{
         width:300px
     }
 }
